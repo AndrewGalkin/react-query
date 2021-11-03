@@ -1,0 +1,39 @@
+.btn_container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+
+  .planets_btn {
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    &:active{
+      background-color: transparent;
+    }
+  }
+
+  .people_btn {
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    &:active{
+      background-color: transparent;
+    }
+  }
+
+}
+
+
