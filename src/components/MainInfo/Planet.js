@@ -1,12 +1,10 @@
 import React from 'react';
-import classes from "./Main.module.scss";
+import classes from "./Main.module.scss"
 
 const Planet = ({planet}) => {
   return (
-    <div className={classes.planet_person_info}>
-      <h3>{planet.name}</h3>
-      <span>Population: {planet.population}</span>
-      <p>Territory: {planet.terrain}</p>
+    <div className={`${classes.planet_person_info} animate__animated animate__backInDown  animate__slow`}>
+      <span>{planet.name}</span><span>Population: {planet.population}</span><span>Diameter: {planet.diameter}</span>
     </div>
   );
 };

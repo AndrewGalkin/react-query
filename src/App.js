@@ -2,21 +2,20 @@ import Navigation from "./components/NavBar/Navigation";
 import {useState} from "react";
 import Planets from "./components/MainInfo/Planets";
 import People from "./components/MainInfo/People";
-// import {ReactQueryDevtools} from "react-query-devtools";
 
 
 const App = () => {
-const [page, setPage] = useState("planets")
+const [page, setPage] = useState("")
 
   return (
     <> <div className={"main_content"}>
-      <h1>STAR WARS</h1>
+      <h1 className={"animate__animated animate__tada animate__slow"}>STAR WARS</h1>
       <Navigation setPage={setPage}/>
       <div>
-        {page === "planets" ? <Planets/> : <People/>}
+        {page === "planets" ? <Planets/> : ""}
+        {page === "people" ? <People/> : ""}
       </div>
     </div>
-      {/*<ReactQueryDevtools initialIsOpen={false}/>*/}
     </>
 
   )

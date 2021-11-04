@@ -1,12 +1,12 @@
 import React from 'react';
-import classes from "./Main.module.scss";
+import classes from "./Main.module.scss"
 
 const Person = ({person}) => {
   return (
-    <div className={classes.planet_person_info}>
-      <h3>{person.name}</h3>
+    <div className={`${classes.planet_person_info} animate__animated animate__backInDown animate__slow`}>
+      <span>{person.name}</span>
       <span>{person.gender}</span>
-      <p>{person.eye_color}</p>
+      <span>{person.eye_color}</span>
     </div>
   );
 };

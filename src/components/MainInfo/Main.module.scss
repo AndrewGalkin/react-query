@@ -5,25 +5,93 @@
   margin: 0 auto;
   align-items: center;
   overflow: scroll;
+  padding-top: 50px;
 
   .planet_person_info {
     display: flex;
     flex-direction: row;
     width: 55%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: grey;
+    background-color: chocolate;
     margin-bottom: 15px;
     border-radius: 10px;
     padding: 15px;
-
-    h3 {
-      margin: 0 10px 0 0;
-    }
+    color: white;
 
     span {
-      margin-right: 10px;
+      &:nth-child(1) {
+        width: 20%;
+      }
+
+      &:nth-child(2) {
+        text-align: center;
+        width: 30%;
+      }
+
+      &:nth-child(3) {
+        text-align: right;
+        width: 25%;
+      }
+
+      font-size: 20px;
+
+    }
+
+  }
+}
+
+
+.loading {
+  text-align: center;
+}
+
+.pages_section {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  justify-content: space-evenly;
+  margin: 20px 0;
+
+  .prev_page {
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+
+    &:active {
+      background-color: transparent;
+    }
+
+    &:disabled {
+      background-color: transparent;
     }
   }
 
+  .next_page {
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+
+    &:active {
+      background-color: transparent;
+    }
+
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+
+  .page {
+    font-size: 20px;
+  }
 }
